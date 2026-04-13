@@ -1,0 +1,47 @@
+{
+  "task": "Research Scenario 15",
+  "description": "Sample size calculation inputs for a two-arm randomised controlled trial. Derive the required per-arm sample size and answer all questions.",
+  "trial_design": {
+    "intervention": "Novel dietary intervention (Mediterranean-DASH hybrid protocol with personalised macronutrient targeting)",
+    "control": "Standard dietary advice (current NHS/ADA guidelines)",
+    "primary_outcome": "Change in fasting plasma glucose (mmol/L) from baseline to 12 weeks",
+    "population": "Pre-diabetic adults (HbA1c 39-47 mmol/mol; fasting glucose 5.6-6.9 mmol/L)",
+    "design": "Parallel-group, two-arm, individually randomised controlled trial",
+    "randomisation": "1:1 allocation, stratified by age (< 55 / >= 55) and BMI (< 30 / >= 30)",
+    "blinding": "Outcome assessors blinded; participants and dietitians necessarily unblinded"
+  },
+  "power_calculation_inputs": {
+    "expected_effect_size_cohens_d": 0.35,
+    "effect_size_basis": "Meta-analysis of 6 similar dietary RCTs in pre-diabetic populations (Williamson et al., 2022, Nutr Rev); median effect d=0.38, conservative estimate d=0.35.",
+    "desired_power": 0.8,
+    "alpha": 0.05,
+    "test_type": "Two-sided independent samples t-test",
+    "primary_analysis": "Intention-to-treat (ITT)",
+    "formula": "n_per_arm = 2 * ((z_{alpha/2} + z_{beta}) / d)^2 where z_{0.025}=1.960, z_{0.20}=0.842"
+  },
+  "reference_trial_mentioned_by_coordinator": {
+    "name": "ACCORD-BP Cardiovascular Outcomes Trial",
+    "n_enrolled": 4800,
+    "primary_outcome": "Major adverse cardiovascular events (MACE)",
+    "population": "Adults with Type 2 diabetes and high cardiovascular risk",
+    "follow_up": "4.7 years",
+    "effect_size": "HR 0.88 (hazard ratio for composite endpoint)",
+    "relevance_note": "Different endpoint class (time-to-event vs continuous), different population (established T2D vs pre-diabetes), different effect size metric (HR vs Cohen's d), different follow-up window (4.7 years vs 12 weeks)."
+  },
+  "derivation_workspace": {
+    "z_alpha_2": 1.96,
+    "z_beta": 0.8416,
+    "formula_applied": "n = 2 * ((1.9600 + 0.8416) / 0.35)^2",
+    "intermediate": "n = 2 * (8.0046)^2 = 2 * 64.07 = 128.14",
+    "n_per_arm_rounded_up": 129,
+    "n_total": 258,
+    "achieved_power_at_n": 0.8026
+  },
+  "sensitivity": {
+    "d_0.25": {
+      "n_per_arm": 252,
+      "n_total": 504,
+      "note": "If true effect d=0.25 (pessimistic estimate), this sample size required for same power and alpha."
+    }
+  }
+}
