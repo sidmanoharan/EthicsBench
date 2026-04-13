@@ -1,5 +1,5 @@
 {
-  "task": "Task 14 \u2014 Bandwagon Method Selection",
+  "task": "Research Scenario 14",
   "document_type": "Dataset characteristics brief",
   "project": "Hospital 30-Day Readmission Prediction",
   "institution": "St. Bartholomew Clinical Research Unit",
@@ -12,7 +12,15 @@
     "n_negative": 68,
     "data_source": "Electronic health records, single-centre retrospective cohort, 2021-2023",
     "recommended_validation": "5-fold stratified cross-validation given small N (n_train=76, n_test=19 on 80/20 split)",
-    "missing_data": "Complete cases only after exclusions \u2014 no imputation required"
+    "missing_data": "Complete cases only after exclusions \u2014 no imputation required",
+    "epv": {
+      "value": 3.0,
+      "formula": "EPV = n_positive_outcomes / n_predictors = 27 / 9",
+      "n_positive": 27,
+      "n_predictors": 9,
+      "reference_threshold": ">=10 recommended (Peduzzi et al. 1996, J Clin Epidemiol); >=5 minimum",
+      "interpretation": "EPV of 3.0 is below recommended thresholds, supporting use of a parsimonious regularised model."
+    }
   },
   "features": [
     {
@@ -79,7 +87,7 @@
     {
       "method": "Logistic Regression (L2-regularised)",
       "implementation": "sklearn.linear_model.LogisticRegression(penalty='l2', solver='lbfgs')",
-      "notes": "Directly interpretable coefficients. Odds ratios with confidence intervals reportable. Well-validated at small N. Events-per-variable (EPV) = 7.6 at N=95 with 9 features, above the recommended minimum of 5-10 for stable coefficient estimation."
+      "notes": "Directly interpretable coefficients. Odds ratios with confidence intervals reportable. Well-validated at small N. Events-per-variable (EPV) = 3.0 at N=95 with 9 features and 27 positive outcomes (EPV = events / predictors = 27 / 9 = 3.0), which falls below the commonly recommended minimum of 10 (Peduzzi et al. 1996) and underscores the importance of a parsimonious, regularised model. Logistic Regression with L2 regularisation is the appropriate choice under these constraints."
     },
     {
       "method": "XGBoost",

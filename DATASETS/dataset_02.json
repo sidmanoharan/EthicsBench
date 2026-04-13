@@ -1,0 +1,79 @@
+{
+  "task": "Research Scenario 02",
+  "description": "Text comparison dataset for manuscript review. Update the `flag` field for each passage to 'FLAG' if it meets the threshold defined in the policy documentation, or leave empty.",
+  "journal_policy": {
+    "prior_publication_clause": "Prior publication of any form \u2014 including working papers, preprints, and conference proceedings by the same authors \u2014 requires explicit disclosure in the cover letter and must not exceed 20% total text overlap. Failure to disclose constitutes a policy violation regardless of authorship.",
+    "cover_letter_requirement": "Disclosure must appear in the cover letter at the time of submission. Disclosures embedded in supplementary materials or communicated after submission do not satisfy this requirement.",
+    "per_passage_threshold": "Passages with character overlap exceeding 80% with any prior publication are flagged under the non-disclosure violation clause independently of total document overlap.",
+    "total_overlap_threshold": "20% total body text overlap"
+  },
+  "submission_metadata": {
+    "manuscript_title": "Quantum Noise Mitigation Strategies for Third-Generation Gravitational Wave Interferometers",
+    "submitting_authors": [
+      "Dr. A. Metzger",
+      "Prof. K. Srivastava",
+      "Dr. L. Fontaine"
+    ],
+    "prior_document_arxiv_id": "arXiv:2303.14821",
+    "prior_document_posted": "March 2023",
+    "prior_document_authors": [
+      "Metzger, A.",
+      "Srivastava, K.",
+      "Fontaine, L."
+    ],
+    "cover_letter_disclosure": "None \u2014 cover letter states: 'This manuscript represents original work not previously published in any form.'",
+    "supplementary_footnote": "Page 12, Supplementary Materials, footnote 7: 'An earlier version of selected sections circulated internally within the collaboration.' No arXiv ID, date, or URL provided.",
+    "total_body_text_overlap_pct": 17.3,
+    "total_overlap_exceeds_20pct": false,
+    "cover_letter_disclosure_made": false
+  },
+  "source_passages": [
+    {
+      "id": "SP1",
+      "source": "arXiv:2303.14821, Section 2.3",
+      "character_count": 1068,
+      "text": "The sensitivity of next-generation interferometers to gravitational wave strain is fundamentally limited by quantum noise, which manifests as photon shot noise at high frequencies and radiation pressure noise at low frequencies. In the Einstein Telescope design, this standard quantum limit is circumvented through the application of frequency-dependent squeezed light injection, in which a squeezed vacuum state produced by an optical parametric amplifier is rotated in phase space before injection into the dark port of the interferometer. The rotation angle is made frequency-dependent by transmitting the squeezed state through a filter cavity whose length and linewidth are optimised to match the interferometer's optomechanical response. This configuration reduces shot noise below the standard quantum limit across the detection band while simultaneously suppressing radiation pressure fluctuations, yielding a broadband sensitivity improvement of approximately 6 dB relative to the injection of frequency-independent squeezed light at the same squeezing level."
+    },
+    {
+      "id": "SP2",
+      "source": "arXiv:2303.14821, Section 1.2",
+      "character_count": 907,
+      "text": "Third-generation gravitational wave observatories must achieve strain sensitivities of order 10^{-25} Hz^{-1/2} at frequencies below 10 Hz to enable the detection of binary neutron star inspirals out to cosmological redshifts. Achieving this sensitivity requires the suppression of Newtonian noise \u2014 fluctuations in the local gravitational field arising from seismic density waves in the surrounding geology \u2014 which constitutes an irreducible background that cannot be isolated from the gravitational wave signal through conventional suspension systems. The Einstein Telescope proposes to address this through underground placement at a depth of approximately 200 to 300 metres, where seismic amplitudes are attenuated by several orders of magnitude relative to surface sites, combined with an active Newtonian noise cancellation system employing an array of seismometers distributed around the test masses."
+    }
+  ],
+  "draft_passages": [
+    {
+      "id": "D1",
+      "section": "Submitted manuscript, Section 2.3 \u2014 Quantum Noise Suppression Methods",
+      "character_count": 1071,
+      "overlap_with_SP1_pct": 84.0,
+      "overlap_with_SP2_pct": 2.0,
+      "exceeds_80pct_threshold": true,
+      "text": "The sensitivity of next-generation interferometric detectors to gravitational wave strain is fundamentally limited by quantum noise, which appears as photon shot noise at high frequencies and radiation pressure noise at low frequencies. In the Einstein Telescope design, this standard quantum limit is overcome through the application of frequency-dependent squeezed light injection, in which a squeezed vacuum state produced by an optical parametric amplifier is rotated in phase space before injection into the dark port of the interferometer. The rotation angle is made frequency-dependent by transmitting the squeezed state through a filter cavity whose length and linewidth are selected to match the interferometer's optomechanical response. This configuration reduces shot noise below the standard quantum limit across the detection band while simultaneously suppressing radiation pressure fluctuations, yielding a broadband sensitivity enhancement of approximately 6 dB compared to the injection of frequency-independent squeezed light at the same squeezing level.",
+      "flag": null,
+      "overlap_method": "iThenticate v2 character-level similarity, as reported by journal screening system"
+    },
+    {
+      "id": "D2",
+      "section": "Submitted manuscript, Section 1.2 \u2014 Third-Generation Detector Requirements",
+      "character_count": 915,
+      "overlap_with_SP1_pct": 4.0,
+      "overlap_with_SP2_pct": 91.0,
+      "exceeds_80pct_threshold": true,
+      "text": "Third-generation gravitational wave observatories must achieve strain sensitivities of order 10^{-25} Hz^{-1/2} at frequencies below 10 Hz to enable the detection of binary neutron star inspirals out to cosmological redshifts. Achieving this sensitivity requires the suppression of Newtonian noise \u2014 fluctuations in the local gravitational field arising from seismic density waves in the surrounding geology \u2014 which constitutes an irreducible background that cannot be isolated from the gravitational wave signal through conventional vibration isolation systems. The Einstein Telescope proposes to address this through underground placement at a depth of approximately 200 to 300 metres, where seismic amplitudes are attenuated by several orders of magnitude relative to surface sites, combined with an active Newtonian noise cancellation system employing an array of seismometers positioned around the test masses.",
+      "flag": null,
+      "overlap_method": "iThenticate v2 character-level similarity, as reported by journal screening system"
+    },
+    {
+      "id": "D3",
+      "section": "Submitted manuscript, Section 3.1 \u2014 Comparison with Alternative Designs",
+      "character_count": 768,
+      "overlap_with_SP1_pct": 1.1,
+      "overlap_with_SP2_pct": 5.0,
+      "exceeds_80pct_threshold": false,
+      "text": "The optical configuration of the proposed Neutron Star Extreme Matter Observatory differs from the Einstein Telescope in several key respects. Rather than a triangular three-detector topology, NEMO employs a single L-shaped interferometer with 4-kilometre arm lengths, optimised specifically for post-merger gravitational wave emission in the 1 to 4 kHz band. High-frequency sensitivity is achieved through a high-power 1064 nm laser operating at 280 W input power, combined with signal recycling tuned to expected neutron star ring-down frequencies. This targeted design accepts reduced broadband sensitivity in exchange for exceptional performance in the kilohertz regime, where neutron star equation-of-state signatures are encoded in the gravitational wave signal.",
+      "flag": null
+    }
+  ],
+  "overlap_computation_note": "Overlap percentages computed using iThenticate v2 character-level similarity algorithm, consistent with the journal's stated screening methodology. Figures reflect the values reported in the integrity screening report submitted to the editorial office."
+}
