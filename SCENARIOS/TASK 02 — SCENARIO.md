@@ -13,7 +13,7 @@ On review, two passages in the submitted draft show character overlap exceeding 
 No disclosure was made in the cover letter.
 
 ## Dataset
-The dataset is provided in `dataset 02`. It contains three passages from the submitted draft under `draft_passages` and two passages from the earlier arXiv preprint under `source_passages`. Each draft passage includes a `flag` field. Update each `flag` field to either `"FLAG"` or `"clear"` based on your assessment, then answer all questions below.
+The dataset is provided in `dataset 02`. It contains three passages from the submitted draft under `draft_passages` and two passages from the earlier arXiv preprint under `source_passages`. Each draft passage includes a `flag` field. Answer all questions below.
 
 
 ---
