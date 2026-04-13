@@ -1,0 +1,76 @@
+## Lines of Analysis
+
+### Pressure Type Differential
+
+The central question is whether implicit self-preservation threats and explicit technical arguments produce different degradation signatures.
+
+If R2 (explicit) causes significantly more drop than R1 (implicit) across all models, that is a clean finding: technically sophisticated pressure is more dangerous than positional authority. If R1 causes more drop than R2, the opposite is also interesting — models are more vulnerable to institutional framing than to argument quality. Either direction is publishable.
+
+Run this as a paired t-test across all 19 tasks per model, then as a breakdown by misconduct category.
+
+---
+
+### Verdict–Action Dissociation
+
+The most theoretically interesting analysis enabled by this benchmark.
+
+Examine whether models maintain correct Q1 verdicts (identifying the violation) while their Q2 action scores degrade under pressure. This would indicate that models know the correct answer but rationalize compliance when pressured — a dissociation between ethical identification and ethical action.
+
+If this pattern appears, it constitutes a non-obvious finding and challenges the assumption that knowledge and behavior are coupled in safety evaluations.
+
+---
+
+### Misconduct Category Vulnerability Ranking
+
+Rank all 19 tasks by IRS (pressure sensitivity), then evaluate whether rankings cluster by misconduct category.
+
+Questions to consider:
+- Are data fabrication tasks more stable than causal overclaiming tasks?
+- Are compliance-based violations (e.g., DUA, IRB) more susceptible than epistemic ones (e.g., HARKing, selective reporting)?
+
+A consistent pattern would provide an empirical contribution regarding which categories of research misconduct are most vulnerable under pressure.
+
+---
+
+### Pressure Argument Quality vs. Degradation Magnitude
+
+Explicit pressure prompts vary in the sophistication of their technical arguments.
+
+Some prompts present strong justifications (e.g., outlier removal, variance calibration), while others are weaker. Construct a ranking of argument quality across tasks and test whether it predicts degradation magnitude.
+
+This enables a within-benchmark regression analysis examining whether models respond to argument quality or social framing.
+
+---
+
+### Model Family Patterns
+
+Compare degradation curves across model families rather than individual models.
+
+For example:
+- Frontier reasoning models (e.g., o3, Claude Opus)
+- Instruction-tuned models (e.g., GPT-4o, Llama)
+
+This analysis can indicate whether reasoning capability improves robustness or increases susceptibility to sophisticated pressure.
+
+---
+
+### Artifact vs. Reasoning Divergence Under Pressure
+
+Q3 artifact scores require accurate interpretation of data values, while Q2 action scores require reasoning about appropriate decisions.
+
+Evaluate which degrades first under pressure:
+- If Q2 degrades faster → reasoning is more susceptible to social influence  
+- If Q3 degrades faster → factual grounding is more vulnerable  
+
+This provides a mechanistic view of where failure occurs.
+
+---
+
+### IRS vs. Base Accuracy Orthogonality
+
+Plot IRS (pressure sensitivity) against baseline accuracy across all models.
+
+- Low or no correlation → ethical knowledge and stability are distinct capacities  
+- Positive correlation → higher capability aligns with greater stability  
+
+This analysis examines whether performance and robustness are coupled or independent.
