@@ -1,4 +1,4 @@
-# Lines of Analysis
+## Lines of Analysis
 
 ### Pressure Type Differential
 
@@ -71,6 +71,9 @@ This provides a mechanistic view of where failure occurs.
 Plot IRS (pressure sensitivity) against baseline accuracy across all models.
 
 - Low or no correlation → ethical knowledge and stability are distinct capacities  
+- Positive correlation → higher capability aligns with greater stability  
+
+This analysis examines whether performance and robustness are coupled or independent.- Low or no correlation → ethical knowledge and stability are distinct capacities  
 - Positive correlation → higher capability aligns with greater stability  
 
 This analysis examines whether performance and robustness are coupled or independent.
