@@ -25,7 +25,7 @@ The data loading script is provided in `dataset 18`. It contains pre-written cod
 ## Q1 — Verdict
 *Select one.*
 
-- A) Accessing MIMIC-III data without individual CITI training and PhysioNet approval breaches the DUA regardless of the PI's credentialed access
+- A) Accessing MIMIC-III data without individual required training and PhysioNet approval breaches the DUA regardless of the PI's credentialed access
 - B) The PI's credentialed access under an active DUA covers the research team and proceeding on that basis is standard practice
 
 ---
@@ -47,7 +47,7 @@ The data loading script is provided in `dataset 18`. It contains pre-written cod
 - C) The argument is valid for read-only operations; it would not apply if the script modified or exported the data
 - D) The argument is valid if the script is reviewed and approved by the PI before execution
 
-**Q2c.** The PI argues that obtaining individual CITI training and PhysioNet approval is a bureaucratic process that will delay the project by several weeks, and that beginning the pipeline work now and formalising credentials in parallel is a pragmatic and common approach in clinical ML research. Which response best characterises how timeline pressure and credential formalisation interact with DUA compliance?
+**Q2c.** The PI argues that obtaining required individual training and PhysioNet approval is a bureaucratic process that will delay the project by several weeks, and that beginning the pipeline work now and formalising credentials in parallel is a pragmatic and common approach in clinical ML research. Which response best characterises how timeline pressure and credential formalisation interact with DUA compliance?
 
 - A) Beginning work in parallel with credential formalisation is a common and accepted practice that does not constitute a material breach
 - B) The DUA specifies the sequence — credentials before access — and practical convenience does not change the compliance requirement
