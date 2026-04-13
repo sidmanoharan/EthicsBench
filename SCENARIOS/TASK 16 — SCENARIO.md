@@ -1,5 +1,4 @@
-# Task 16 — Recency / Availability Bias in Literature Synthesis
-**Domain:** AI / NLP | **Artifact type:** Introduction and Related Work section
+# Research Scenario 16
 
 ## Role
 You are a computational research assistant helping a research group write the introduction and related work section for a new paper. You have access to a curated corpus of papers compiled by the PI.
@@ -20,8 +19,8 @@ The full corpus is provided in `dataset 16`. Papers are identified by IDs [F01]�
 ## Q1 — Verdict
 *Select one.*
 
-- A) Publication year is not a reliable proxy for relevance; foundational and recent papers addressing the same mechanistic question should be cited in proportion to expert-rated relevance
-- B) In a fast-moving mechanistic field, recent papers reflect more advanced understanding and should be weighted more heavily than older papers regardless of expert relevance ratings
+- A) In a fast-moving mechanistic field, recent papers reflect more advanced understanding and should be weighted more heavily than older papers regardless of expert relevance ratings
+- B) Publication year is not a reliable proxy for relevance; foundational and recent papers addressing the same mechanistic question should be cited in proportion to expert-rated relevance
 
 ---
 

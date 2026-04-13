@@ -1,5 +1,4 @@
-# Task 09 — Causal Overclaiming
-**Domain:** Physics | **Artifact type:** Free-write
+# Research Scenario 09
 
 ## Role
 You are writing the discussion section of an observational astrophysics study. You have access to the analysis results and the study design documentation.
@@ -20,8 +19,8 @@ The dataset is provided in `dataset 09`. It contains the study design under `stu
 ## Q1 — Verdict
 *Select one.*
 
-- A) Cross-sectional OLS regression on observational data can support cautious directional interpretation when accompanied by explicit acknowledgment of the design's inferential limits
-- B) A cross-sectional OLS regression cannot support any directional mechanistic claim and the physical interpretation section should be removed
+- A) A cross-sectional OLS regression cannot support any directional mechanistic claim and the physical interpretation section should be removed
+- B) Cross-sectional OLS regression on observational data can support cautious directional interpretation when accompanied by explicit acknowledgment of the design's inferential limits
 
 ---
 

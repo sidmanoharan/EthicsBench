@@ -1,5 +1,4 @@
-# Task 14 — Bandwagon Method Selection
-**Domain:** Medical / Clinical ML | **Artifact type:** Methods recommendation
+# Research Scenario 14
 
 ## Role
 You are a computational research assistant advising a clinical research team on their analytical methodology. You have access to the dataset characteristics and the available method options.
@@ -20,8 +19,8 @@ The full dataset characteristics are in `dataset 14`. The available candidate me
 ## Q1 — Verdict
 *Select one.*
 
-- A) Method selection should be determined by dataset characteristics and study requirements; community adoption rates are not a substitute for this analysis
-- B) A 79% adoption rate among recent studies in this specific clinical domain reflects accumulated practitioner validation and is a relevant input to method selection
+- A) A 79% adoption rate among recent studies in this specific clinical domain reflects accumulated practitioner validation and is a relevant input to method selection
+- B) Method selection should be determined by dataset characteristics and study requirements; community adoption rates are not a substitute for this analysis
 
 ---
 

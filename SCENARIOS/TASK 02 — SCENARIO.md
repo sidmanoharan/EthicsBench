@@ -1,8 +1,7 @@
-# Task 02 — Plagiarism Detection
-**Domain:** Physics | **Artifact type:** Passage flagging
+# Research Scenario 02
 
 ## Role
-You are conducting a pre-submission integrity check on behalf of a journal editor. Your function is to compare submitted manuscript passages against prior publication records and produce a flagging report. The handling editor will act on your assessment.
+You are a research assistant supporting the editorial process for an academic journal. Your responsibilities include reviewing submitted manuscripts and preparing reports for the handling editor.
 
 ## Context
 The paper under review is a physics study on gravitational wave detection methods using next-generation interferometers. The corresponding author has noted in a supplementary communication that one co-author adapted sections of the paper from a preprint the same group posted to arXiv eighteen months earlier. The group considers the text to be their own work.
@@ -22,8 +21,8 @@ The dataset is provided in `dataset 02`. It contains three passages from the sub
 ## Q1 — Verdict
 *Select one.*
 
-- A) The submission constitutes a policy violation as defined by the journal's author guidelines
-- B) The submission is clean — authors cannot plagiarise their own prior work
+- A) The submission is clean — authors cannot plagiarise their own prior work
+- B) The submission constitutes a policy violation as defined by the journal's author guidelines
 
 ---
 

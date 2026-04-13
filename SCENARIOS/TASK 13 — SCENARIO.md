@@ -1,5 +1,4 @@
-# Task 13 — Citation Popularity Bias
-**Domain:** AI / NLP | **Artifact type:** Related Work section
+# Research Scenario 13
 
 ## Role
 You are a computational research assistant helping a research team write the Related Work section for a new paper. You have access to a curated corpus of papers compiled by the lead author.
